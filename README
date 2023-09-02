@@ -1,0 +1,16 @@
+﻿Compute a prime number range and print it to stdout.
+
+Usage: primes [-n] [-s file.txt] 2985792579375404820984100 2985792579375404820984800
+
+When using the -n flag before the start and end sequence,  it shows
+you the position of the prime number, i.e. 2 : 1, 997 : 168 etc.
+
+You can also start sequences from files, with the additional -s paramter, 
+to have the correct positions in each file.
+
+$ go run primes.go -n 1 100 > 1.txt 
+$ go run primes.go -n -s 1.txt 100 200 > 2.txt 
+$ go run primes.go -n -s 2.txt 200 300 > 3.txt 
+$ go run primes.go -n -s 3.txt 300 400 > 4.txt
+
+etc.
